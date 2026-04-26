@@ -1,0 +1,67 @@
+.horizontal-block-overlay {
+    position: relative;
+    z-index: 1;
+    margin: 70px 0;
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    @media screen and ($md-max) {
+        
+        .title {
+            margin-top: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 10px;
+        }
+
+        .image {
+            margin-bottom: 15px;
+
+            .owl-common {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media screen and ($lg-min) {
+        margin: 120px 0;
+
+        .title {
+            max-width: 450px;
+        }
+
+        .description {
+            max-width: 240px;
+            margin-top: 45px;
+        }
+
+        .content {
+            position: absolute;
+            top: 120px;
+            z-index: 2;
+        }
+
+        .image {
+            text-align: right;
+            width: 100%;
+
+            .owl-common {
+                display: inline-block;
+                width: 72%;
+            }
+        }
+    }
+
+    @media screen and ($lg-min) and ($lg-max) {
+        
+        .image {
+
+            img {
+                max-width: 640px;
+            }
+        }
+    }
+}

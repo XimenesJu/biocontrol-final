@@ -1,0 +1,102 @@
+.products-side-menu,
+.mobile-side-menu {
+
+    .menu-toggle {
+        transform: scale(0.7);
+        transform-origin: right;
+        position: absolute;
+        right: 15px;
+    }
+
+    .menu {
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                font-size: 1.43375rem;
+                font-weight: 100;
+                color: $dark;
+                margin-bottom: 40px;
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: $primary;
+                    }
+
+                    &[aria-expanded="true"] {
+                        border-bottom: 2px solid $dark;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin-top: 30px;
+                    margin-bottom: 40px;
+                    margin-left: 20px;
+
+                    li {
+                        font-size: 1.194375rem;
+                        margin-bottom: 20px;
+
+                        &.active {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and ($md-max) {
+        position: relative;
+        margin-bottom: 30px;
+
+        .menu {
+            width: 270px;
+            background-color: rgba($white, 0.98);
+            border-radius: 0 30px 30px 0;
+            padding: 45px 20px 20px;
+            position: absolute;
+            top: 46px;
+            left: 0;
+            z-index: 4;
+            box-shadow: 3px 0 5px rgba($dark, 0.5);
+            transform: translateX(-410px);
+            transition: $transition-base;
+
+            .menu-toggle {
+                background-color: transparent;
+                font-size: 1.425rem;
+                color: $primary;
+                border: none;
+                position: absolute;
+                left: 208px;
+                top: 12px;
+                cursor: pointer;
+            }
+        }
+
+        &.menu-open {
+
+            .menu {
+                transform: translateX(-15px);
+            }
+        }
+    }
+
+    @media screen and ($lg-min) {
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu {
+            margin-top: 40px;
+        }
+    }
+}

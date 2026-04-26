@@ -1,0 +1,19 @@
+.warning-block {
+    font-family: 'Arial', Helvetica Neue, sans-serif;
+    color: $dark;
+    text-transform: uppercase;
+    text-align: justify;
+    line-height: 1.1;
+    border: 1px solid $secondary;
+    padding: 15px;
+
+    .big {
+        font-size: 160%;
+        font-weight: 700;
+    }
+
+    @media screen and ($lg-min) {
+        font-size: 1.51125rem;
+        padding: 30px;
+    }
+}

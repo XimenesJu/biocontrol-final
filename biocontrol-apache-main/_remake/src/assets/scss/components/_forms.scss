@@ -1,0 +1,146 @@
+input,
+select,
+textarea,
+input.form-control,
+select.form-control,
+textarea.form-control,
+.form-control {
+	box-shadow: none;
+	border-width: 0 0 2px 0;
+	padding-left: 0;
+
+	&.error {
+		border-color: $warning !important;
+	}
+
+	&.custom-check-form{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.form-group {
+	position: relative;
+
+	label:not(.normal-label) {
+		text-transform: uppercase;
+		transition: $transition-base;
+		position: absolute;
+		left: 0;
+		top: 11px;
+		z-index: 2;
+
+		&.error {
+			font: {
+				size: 0.75rem !important;
+				weight: normal
+			}
+			color: $warning;
+			text-transform: none;
+			top: inherit;
+			bottom: -6px;
+			left: inherit;
+			right: 0;
+		}
+	}
+
+	.custom-label{
+		font-size: 1.2rem !important;
+		text-transform: uppercase !important;
+		color: $primary;
+	}
+}
+
+select,
+input:focus,
+input:valid,
+input.error,
+input.form-file,
+input.has-value,
+textarea:focus,
+textarea:valid,
+textarea.error,
+textarea.form-file,
+textarea.has-value {
+
+	&:focus {
+		box-shadow: none !important;
+	}
+
+	~ label:not(.normal-label) {
+		transform: translateY(-16px) scale(0.7);
+		transform-origin: 0 0;
+
+		&.error {
+			transform: none;
+		}
+	}
+
+	.custom-label{
+		font-size: 1.2rem !important;
+		text-transform: uppercase !important;
+	}
+
+	&::-ms-clear { // escondendo o ícone 'clear' do IE
+		display: none;
+		width: 0;
+		height: 0;
+	  }
+}
+
+
+.custom-select {
+	border-width: 0 0 2px 0;
+	background-size: 20px 13px;
+	text-transform: uppercase;
+	padding-left: 0;
+	color: $primary;
+}
+
+
+.custom-radio {
+	position: relative;
+	margin-bottom: 30px;
+
+	label.small {
+		font-size: 78%;
+	}
+
+	label.error {
+		color: $warning;
+		position: absolute;
+		top: 100%;
+		font-size: 70%;
+	}
+}
+
+
+.input-file {
+
+	input {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+
+		& + label {
+			font-size: 1.25rem;
+			color: $primary;
+		}
+	}
+
+	.icon {
+		font-size: 1.2rem;
+		color: $primary;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+
+	.file-info {
+		max-width: calc(100% - 26px);
+		overflow: hidden;
+	}
+}

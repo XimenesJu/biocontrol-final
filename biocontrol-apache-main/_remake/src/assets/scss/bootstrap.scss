@@ -1,0 +1,31 @@
+/**
+ * Generates a standalone Bootstrap SASS build
+ * using theme custom colors and values for BS Sass variables.
+ * 
+ * This build will be mixed with the compiled SASS project.
+ */
+
+
+
+// General settings
+// ==============================
+@import 'settings/colors';
+@import 'settings/bootstrap-vars';
+
+
+// Bootstrap Sass
+// ==============================
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// hamburguer Sass
+// ================================
+
+$hamburger-padding-x: 2px;
+$hamburger-padding-y: 2px;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-types     : (collapse);
+$hamburger-hover-opacity: 1;
+$hamburger-layer-color: $primary;
+@import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';

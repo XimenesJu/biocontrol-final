@@ -1,0 +1,21 @@
+.folhasContainer{
+    height: 50px;
+    width: 100%;
+    overflow: visible;
+    img{
+        width: auto;
+        height: 250px;
+        position: relative;
+        z-index: -5;
+        top: -80px;
+        left: 10%;
+    }
+}
+
+
+@media (max-width: 1190px)
+{
+    .folhasContainer{
+        display: none;
+    }
+}

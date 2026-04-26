@@ -1,0 +1,31 @@
+.custom-breadcrumb {
+    margin-top: 2em;
+    list-style-type: none;
+    color: rgba($primary, .5);
+    font-size: 95%;
+    padding-left: 0;
+
+    li {
+        display: inline-block;
+        position: relative;
+
+        a {
+            color: inherit;
+        }
+
+        &::after {
+            content: ' / ';
+            display: inline-block;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        &:last-child {
+            color: $primary;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

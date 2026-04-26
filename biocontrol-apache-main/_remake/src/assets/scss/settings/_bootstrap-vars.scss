@@ -1,0 +1,119 @@
+// Fonts
+$font-family-base: "Quicksand", Arial, sans-serif;
+$font-family-serif: "Times New Roaman", Times, serif;
+$font-default: $font-family-base;
+// $font-size-base: 16px;
+
+$small-font-size: 88%;
+$line-height-base: 1.3;
+
+
+// Link 
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+
+// Transitions
+$transition-base: all .4s ease-out;
+$btn-transition: $transition-base; 
+
+
+// Border radius
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+
+// Buttons
+$btn-font-weight: 700;
+$btn-padding-y: 10px;
+$btn-padding-x: 20px;
+
+$btn-border-radius: 0 20px;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+
+// Dropdowns
+$dropdown-border-radius: 0;
+// $dropdown-min-width: 10rem;
+// $dropdown-padding-y: .5rem;
+// $dropdown-spacer: .125rem;
+// $dropdown-bg: $white;
+// $dropdown-border-color: rgba($black, .15);
+// $dropdown-border-radius: $border-radius;
+// $dropdown-border-width: $border-width;
+// $dropdown-divider-bg: $gray-200;
+// $dropdown-box-shadow: 0 .5rem 1rem rgba($black, .175);
+
+
+
+// Forms / inputs
+$input-bg: #fff;
+$input-disabled-bg: lighten($gray-base, 40%);
+
+$input-color: $gray-base;
+$input-border-color: $secondary;
+$input-border-width: 2px;
+// $input-box-shadow: inset 0 1px 1px rgba($black, .075);
+
+$input-border-radius: 0;
+// $input-border-radius-lg: $border-radius-lg;
+// $input-border-radius-sm: $border-radius-sm;
+$custom-select-border-radius: 0;
+
+// $input-focus-bg: $input-bg;
+$input-focus-border-color: lighten($gray-base, 20%);
+// $input-focus-color: $input-color;
+// $input-focus-width: $input-btn-focus-width;
+// $input-focus-box-shadow: $input-btn-focus-box-shadow;
+
+$input-placeholder-color: lighten($gray-base, 10%);;
+$input-plaintext-color: $body-color;
+
+$input-padding-y: 11px;
+$input-padding-x: 11px;
+// $input-line-height: $input-btn-line-height;
+
+// $input-padding-y-sm: $input-btn-padding-y-sm;
+// $input-padding-x-sm: $input-btn-padding-x-sm;
+// $input-line-height-sm: $input-btn-line-height-sm;
+
+// $input-padding-y-lg: $input-btn-padding-y-lg;
+// $input-padding-x-lg: $input-btn-padding-x-lg;
+// $input-line-height-lg: $input-btn-line-height-lg;
+
+
+// $input-height-border: $input-border-width * 2;
+
+// $input-height-inner: ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2);
+$input-height: 45px;
+$custom-select-height: $input-height;
+$custom-select-indicator: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEwLTAyVDExOjQzOjA4LTAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMC0wMlQxNDo0MjoyNC0wMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0xMC0wMlQxNDo0MjoyNC0wMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTE2NUM0RTAwNEQ2MTFFQkJDQkRENDUxOTg4NjJERTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTE2NUM0RTEwNEQ2MTFFQkJDQkRENDUxOTg4NjJERTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMTY1QzRERTA0RDYxMUVCQkNCREQ0NTE5ODg2MkRFNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMTY1QzRERjA0RDYxMUVCQkNCREQ0NTE5ODg2MkRFNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiEl38wAAAE/SURBVHjalNK7SkNBEMbxk40W2kSxFSN2kk4LRYlg4RMIKiEgpLEwhTcUG0slD6ERBZ/BwkKQqGiZNomaFDYpvCGCoP4XZmVYTm4DP0j2nHyZ2d3IQDIXUAaj+MRD0FnFMIIa6kbCZnGFMwx2ENaFVRSwh55ob3wuwYdz9EvYJC7w2kbYFvbRjQm8GxmzpF6ckk7jTcJswAYO1Nobnm1gBfO4Uw+ncSp741dUOsupNTvNOk6MLFSxgHv1UhJ5LzSCbRlTd7aJI3e6rp6wiFu1NoNjDMv3HS/sQ0Y//G+fQ9HjvOAS4xiSNbuX9uDGsKua+ELWdebKhOxRGcu4Vmv2X9dk/2x9y3XJ+z82DU7Rhd6EPPvBit9Zq8BArlLaC/1FJqyzdgIDuVIpdfoZuU5Nb3uresQS+lCUkRvWnwADAOqbPf0FxCGKAAAAAElFTkSuQmCC');
+
+// Form states and Alerts
+$state-success-text: #fff;
+$state-success-bg: $success;
+$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%);
+
+$state-info-text: #fff;
+$state-info-bg: $info;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%);
+
+$state-warning-text: #fff;
+$state-warning-bg: $warning;
+$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 5%);
+
+$breadcrumb-bg: transparent;
+
+$alert-bg-level:        -3;
+$alert-border-level:    -3;
+$alert-color-level:      6;
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+    6: $spacer * 4
+)

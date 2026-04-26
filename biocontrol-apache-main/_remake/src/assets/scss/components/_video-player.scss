@@ -1,0 +1,54 @@
+.video-player {
+    position: relative;
+
+    .play-button {
+        border: none;
+        background-color: transparent;
+        font-size: 4.5625rem;
+        color: $secondary;
+        position: absolute;
+        top: calc(50% - 47px);
+        left: calc(50% - 53.5px);
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            text-shadow: rgba($dark, 0.3) 10px 10px 30px;
+        }
+    }
+
+    .player {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transition: $transition-base;
+        transform-origin: center;
+
+        .target {
+            height: calc(100% - 40px);
+            margin-top: 40px;
+        }
+
+        .close-player {
+            color: $secondary;
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        &.active {
+            height: calc(100% + 40px);
+            top: -40px;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+.container__blog {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    align-items: center;
+    .blog {
+      position: relative;
+      border-right: 1px solid #b6c95a;
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+      justify-content: center;
+      background-image: url('https://iili.io/R61PeV.png');
+      background-position: 50% 62%;
+      z-index: -1;
+      height: 100%;
+      .blog__content {
+        width: 60%;
+        height: 100%;
+        margin-left: 10%;
+        margin-top: 80px;
+        .blog__title {
+          justify-content: left;
+          font-weight: bold;
+          font-size: 32px;
+          color: #293f86;
+          font-family: 'Quicksand', sans-serif;
+          margin-bottom: 8px;
+        }
+        p {
+          justify-content: left;
+          font-size: 24px;
+          color: #293f86;
+          font-family: 'Quicksand', sans-serif;
+        }
+      }
+      .leia {
+        margin-left: 10%;
+        margin-top: 20px;
+        margin-bottom: 150px;
+        a {
+          text-decoration: none;
+          background-color: #b6c95a;
+          padding: 10px 15px;
+          font-size: 16px;
+          color: #293f86;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          border-radius: 0 20px 0 20px;
+
+          &:hover{
+            background-color: #293f86;
+            color: white;
+          }
+        }
+        
+      }
+    }
+    .news {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      height: 55%;
+      top: -10px;
+      z-index: 1;
+      margin-left: -20px;
+      .news__card img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #b6c95a;
+      }
+      .news__rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        width: 100%;
+        padding: 5px 20px;
+        .rodape__texto {
+          display: flex;
+          align-self: flex-end;
+          width: 85%;
+          justify-content: flex-end;
+          background-color: red;
+        
+          p {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 22px;
+          color: #293f86;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          }
+        }
+        .rodape__button {
+          display: flex;
+          margin-top: 15px;
+          justify-content: flex-end;
+          a {
+            text-decoration: none;
+            background-color: #b6c95a;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: #293f86;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            border-radius: 0 20px 0 20px;
+
+            &:hover{
+              background-color: #293f86;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  
+    .muda {
+      display: flex;
+      margin-left: 10px;
+      img {
+        width: 180px;
+        height: 200px;
+      }
+    }
+  }
+
+
+
+@media (max-width: 999px)
+{
+    .container__blog{
+
+        flex-direction: column;
+        width: 100vw;
+
+        .row{
+            width: auto;
+        }
+
+        .muda{
+            display: none;
+        }
+
+        .news{
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            margin-left: 0;
+            height: auto;
+            padding: 0px 5px;
+            
+
+            .news__card{
+                position: relative;
+                max-width: 700px;
+                top: -20px;
+            }
+        }
+    }
+}

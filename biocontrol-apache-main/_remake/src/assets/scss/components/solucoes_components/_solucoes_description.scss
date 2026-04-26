@@ -1,0 +1,20 @@
+.solucoes_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    .solucoes__description {
+      margin-bottom: 5%;
+      width: 70%;
+      p {
+        text-align: left;
+        color: #293f86;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 28px;
+      }
+    }
+  }
+  

@@ -1,0 +1,71 @@
+#{headings(1, 6)} {
+	font-family: $font-default;
+	font-weight: 600;
+
+	&.no-margin-top {
+		margin-top: 0;
+	}
+}
+
+.site-titles {
+
+	.title,
+    .subtitle {
+		line-height: 1;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+		font-weight: 100;
+    }
+
+	@media screen and ($md-min) {
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+		}
+	}
+
+	@media screen and ($lg-min) {
+
+        .title {
+            font-size: 3rem;
+
+            &.medium {
+                font-size: 2.6rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 2rem;
+		}
+	}
+}
+
+
+.title-plus {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '\f067';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 1.55rem;
+        color: lighten($gray-base, 30%);
+        position: absolute;
+        top: 25%;
+        left: 105%;
+        transition: $transition-base;
+    }
+
+    &:hover {
+
+        &::after {
+            color: $primary;
+        }
+    }
+}

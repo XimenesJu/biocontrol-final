@@ -1,0 +1,148 @@
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 100%;
+	color: #293f86;
+	font-family: 'Quicksand', sans-serif;
+	
+	input,
+	select,
+	textarea,
+	input.form-control,
+	select.form-control,
+	textarea.form-control,
+	.form-control {
+		box-shadow: none;
+		border-width: 0 0 2px 0;
+		border-color: #b6c95a;
+		padding-left: 0;
+		width: 100%;
+		&.error {
+			border-color: #C95247 !important;
+		}
+	}
+	.form-group {
+		position: relative;
+		padding-top: 20px;
+
+	
+		label:not(.normal-label) {
+			text-transform: uppercase;
+			transition: all .4s ease-out;
+			position: absolute;
+			left: 0;
+			top: 11px;
+			z-index: 2;
+			
+	
+			&.error {
+				font: {
+					size: 0.75rem !important;
+					weight: normal
+				}
+				color: #C95247;
+				text-transform: none;
+				top: inherit;
+				bottom: -6px;
+				left: inherit;
+				right: 0;
+			}
+		}
+	}
+	
+	select,
+	input:focus,
+	input:valid,
+	input.error,
+	input.form-file,
+	input.has-value,
+	textarea:focus,
+	textarea:valid,
+	textarea.error,
+	textarea.form-file,
+	textarea.has-value {
+	
+		&:focus {
+			box-shadow: none !important;
+		}
+	
+		~ label:not(.normal-label) {
+			transform: translateY(-16px) scale(0.7);
+			transform-origin: 0 0;
+	
+			&.error {
+				transform: none;
+			}
+		}
+	
+		&::-ms-clear { // escondendo o ícone 'clear' do IE
+			display: none;
+			width: 0;
+			height: 0;
+		  }
+	}
+	
+	
+	.custom-select {
+		border-width: 0 0 2px 0;
+		background-size: 20px 13px;
+		text-transform: uppercase;
+		padding-left: 0;
+		color: #293f86;
+		width: 5%;
+	}
+	
+	
+	.custom-radio {
+		position: relative;
+		margin-bottom: 30px;
+	
+		label.small {
+			font-size: 78%;
+			text-align: justify;
+		}
+	
+		label.error {
+			color: #C95247;
+			position: absolute;
+			top: 100%;
+			font-size: 70%;
+		}
+	}
+	
+	
+	.input-file {
+	
+		input {
+			width: 0.1px;
+			height: 0.1px;
+			opacity: 0;
+			overflow: hidden;
+			position: absolute;
+			z-index: -1;
+	
+			& + label {
+				font-size: 1.25rem;
+				color: #C95247;
+			}
+		}
+	
+		.icon {
+			font-size: 1.2rem;
+			color: #293f86;
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+	
+		.file-info {
+			max-width: calc(100% - 26px);
+			overflow: hidden;
+		}
+	}
+
+}
+
+

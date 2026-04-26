@@ -1,0 +1,17 @@
+/**
+ * Generate utility classes for margin/padding top and bottom
+ */
+
+@each $mg in 0, 10, 20, 30, 40, 60 {
+
+    .mg-top-#{$mg} { margin-top: #{$mg}px; }
+
+	.mg-bt-#{$mg} { margin-bottom: #{$mg}px; }
+}
+
+@each $pdd in 0, 10, 20, 30, 40, 60 {
+
+    .pdd-top-#{$pdd} { padding-top: #{$pdd}px; }
+
+	.pdd-bt-#{$pdd} { padding-bottom: #{$pdd}px; }
+}

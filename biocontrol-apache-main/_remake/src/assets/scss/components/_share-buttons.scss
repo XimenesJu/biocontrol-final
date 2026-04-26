@@ -1,0 +1,33 @@
+.share-buttons {
+    margin-top: 25px;
+
+    .at-style-responsive {
+
+        .at-share-btn {
+            border: 1px solid $dark;
+            border-radius: 100px;
+            transition: $transition-base;
+            margin: 0 4px 5px;
+
+            svg {
+
+                path {
+                    transition: $transition-base;
+                }
+            }
+
+            &:hover {
+                border-color: $dark;
+                background-color: $dark !important;
+                transform: none;
+
+                svg {
+
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}

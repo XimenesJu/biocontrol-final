@@ -1,0 +1,51 @@
+.ciclo-da-praga {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0px 10%;
+  
+    .ciclo__description {
+      flex: 1;
+      padding-right: 5%;
+      h1 {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+      p {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        font-size: 22px;
+      }
+    }
+    .ciclo__image {
+      display: flex;
+      flex: 1;
+      align-self: center;
+      justify-content: center;
+      img {
+        width: auto;
+        height: 400px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1000px)
+  {
+
+    .ciclo-da-praga {
+
+      flex-direction: column;
+
+      .ciclo__image{
+        margin: 20px 0px;
+      }
+    }
+
+  }

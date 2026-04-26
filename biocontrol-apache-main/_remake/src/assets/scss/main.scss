@@ -1,0 +1,98 @@
+// General settings
+// ==============================
+@import 'settings/colors';
+@import 'settings/general';
+@import 'settings/utils';
+@import 'settings/bootstrap-vars';
+@import 'settings/fonts';
+
+
+// Functions and mixins
+// ==============================
+@import 'functions/headings';
+@import 'functions/btn-outline';
+@import 'functions/font-face';
+@import 'functions/margins-paddings';
+
+
+// Components
+// ==============================
+@import 'components/site-header';
+@import 'components/site-footer';
+@import 'components/titles';
+@import 'components/welcome-alert';
+@import 'components/alta-signature';
+@import 'components/buttons-links';
+@import 'components/forms';
+@import 'components/global-search';
+@import 'components/horizontal-block-overlay';
+@import 'components/vertical-block-overlay';
+@import 'components/blog-block-item';
+@import 'components/page-headers';
+@import 'components/timeline';
+@import 'components/pagination';
+@import 'components/bordered-list';
+@import 'components/video-player';
+@import 'components/collapsed-categories';
+@import 'components/warning-block';
+@import 'components/owl-common';
+@import 'components/policy-alert';
+@import 'components/custom-breadcrumb';
+
+
+// Sections and Pages
+// ==============================
+@import 'sections-pages/page-home';
+@import 'sections-pages/page-faq';
+@import 'sections-pages/page-blog';
+@import 'sections-pages/page-blog-details';
+@import 'sections-pages/page-privacy';
+@import 'sections-pages/page-404';
+
+
+// New version
+//Global
+@import 'components/secondary_header';
+@import 'components/main_header';
+
+
+
+
+// Home
+@import 'components/home_components/blogContainer';
+@import 'components/home_components/cookies';
+@import 'components/home_components/CulturasCarousel';
+@import 'components/home_components/folhas';
+@import 'components/home_components/infoHome';
+@import 'components/home_components/searchBar';
+@import 'components/overlay';
+
+
+//pragasList
+@import 'components/pragasList_components/cards';
+
+
+//pragasOpen
+@import 'components/pragasOpen_components/cicloDaPraga';
+@import 'components/pragasOpen_components/description';
+@import 'components/pragasOpen_components/levantamentos';
+@import 'components/pragasOpen_components/solucoesIndicadas';
+
+//culturasList
+@import 'components/culturasList_components/culturas-card';
+
+//culturasOpen
+@import 'components/culturasOpen_components/culturas-description';
+
+//produto-open
+@import 'components/produtoOpen_components/alvos';
+@import 'components/produtoOpen_components/produto_info';
+
+//atuaçao
+@import 'components/atuacao/atuacao';
+
+//solucoes
+@import 'components/solucoes_components/solucoes_description';
+
+//muda-expertise-areas
+@import 'components/image-muda-expertise-areas';

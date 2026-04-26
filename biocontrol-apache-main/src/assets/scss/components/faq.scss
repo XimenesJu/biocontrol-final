@@ -1,0 +1,32 @@
+.faq {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    .faq__title {
+      color: #293f86;
+      font-family: 'Quicksand', sans-serif;
+      padding-bottom: 25px;
+      margin-left: 10%;
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 24px;
+  
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px;
+  
+        margin-top: 15px;
+      }
+    }
+  
+    .faq__leia__mais a {
+      text-decoration: none;
+      margin-left: 10%;
+    }
+  }
+  

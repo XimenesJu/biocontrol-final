@@ -1,0 +1,99 @@
+.page-faq {
+
+    .faq-search {
+        position: relative;
+
+        .form-control {
+            border-bottom-width: 4px;
+            padding-right: 40px;
+
+            &::placeholder {
+                color: $primary;
+            }
+        }
+
+        .submit-btn {
+            border: none;
+            background-color: transparent;
+            color: $primary;
+            font-size: 1.3rem;
+            padding: 5px;
+            position: absolute;
+            right: 6px;
+            top: 0;
+            cursor: pointer;
+        }
+    }
+
+    .faq-item {
+        margin: 30px 0;
+
+        .faq-btn {
+            width: 100%;
+            font-size: 1.423rem;
+            font-weight: 700;
+            color: $primary;
+            text-align: left;
+            border: 2px solid $secondary;
+            background-color: transparent;
+            display: block;
+            margin-bottom: 20px;
+            padding: 20px 76px 20px 20px;
+            position: relative;
+            cursor: pointer;
+
+            i.fas {
+                width: 66px;
+                height: 100%;
+                border-left: 2px solid $secondary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            &:hover {
+                background-color: rgba($secondary, 0.1);
+            }
+
+            &[aria-expanded="true"] {
+
+                i.fas {
+
+                    &::before {
+                        content: '\f068';
+                    }
+                }
+            }
+        }
+
+        .content {
+            padding: 0 20px;
+            margin-bottom: 50px;
+        }
+    }
+    
+    @media screen and ($md-min) {
+
+        .col-side {
+            margin-top: 41px;
+        }
+
+        .faq-search {
+    
+            .form-control {
+                font-size: 1.3rem;
+                padding-bottom: 22px;
+                padding-left: 10px;
+            }
+
+            .submit-btn {
+                font-size: 1.5rem;
+                top: -6px;
+                right: 12px;
+            }
+        }
+    }
+}

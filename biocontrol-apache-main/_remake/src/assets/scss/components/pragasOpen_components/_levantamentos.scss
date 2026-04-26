@@ -1,0 +1,98 @@
+.levantamentos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 0px 10%;
+
+    .levantamentos__description {
+      flex: 1;
+      padding-right: 5%;
+      h1 {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+      p {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        font-size: 22px;
+      }
+    }
+    .levantamentos__Caroulsel {
+        display: flex;
+        flex: 1;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        
+        .LevantamentosKarousel{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // padding: 10px 50px;
+
+            .lancamentos-item{
+                width: 100%;
+                height: 300px;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: center;
+                    border-radius: 70px 0 70px 0;
+                  }
+
+            }
+
+            .owl-dots{
+            display: flex;
+            margin: 15px 0px;
+            width: 100%;
+            justify-content: center;
+        
+            span {
+                background:#b6c95a;
+                border-radius: 20px;
+                display: block;
+                height: 12px;
+                margin: 5px 7px;
+                opacity: 0.8;
+                width: 12px;
+            }
+        
+            .owl-dot.active span{
+                background: #293f86;
+                height: 15px;
+                width: 15px;
+                }
+            }
+        }
+      
+    }
+  }
+
+
+
+  @media (max-width: 1000px)
+  {
+
+    .levantamentos {
+
+      flex-direction: column;
+
+      .levantamentos__Caroulsel{
+
+            margin: 50px 0px;
+      }
+    }
+
+  }

@@ -1,0 +1,46 @@
+.category-menu {
+    margin-top: 20px;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 1.274375rem;
+                color: $dark;
+                border-bottom: 2px solid transparent;
+                display: block;
+                padding: {
+                    left: 20px;
+                    right: 20px;
+                    bottom: 3px;
+                }
+
+                &:hover {
+
+                    color: $gray-base-light;
+                }
+            }
+
+            &.active {
+
+                a {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+
+    @media screen and ($md-max) {
+
+        ul {
+            text-align: left;
+
+            li {
+                display: block;
+            }
+        }
+    }
+}

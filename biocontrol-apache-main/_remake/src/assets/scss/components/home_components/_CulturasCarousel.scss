@@ -1,0 +1,61 @@
+
+
+.CulturasCarousel{
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 10%;
+  margin-top: 60px;
+
+  .item{
+    position: relative;
+  }
+
+  .culturasCarousel-title-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .culturasTitle{
+      font-size: 3rem;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .owl-dots{
+    display: flex;
+    margin: 15px 0px;
+    width: 100%;
+    justify-content: center;
+
+    .owl-dot span {
+      background:#b6c95a;
+      border-radius: 20px;
+      display: block;
+      height: 12px;
+      margin: 5px 7px;
+      opacity: 0.8;
+      width: 12px;
+    }
+
+    .owl-dot.active span{
+      background: #293f86;
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+
+
+
+
+  

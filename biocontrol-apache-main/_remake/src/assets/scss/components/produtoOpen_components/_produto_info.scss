@@ -1,0 +1,139 @@
+.produto-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+
+    .description{
+        display: flex;
+        flex-direction: row;
+
+        .description-text{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            
+            font-family: 'Quicksand', sans-serif;
+            color: #293f86;
+
+            h1{
+                margin-bottom: 60px;
+            }
+
+            p{
+                max-width: 700px;
+                font-size: 24px;
+            }
+        }
+
+        .description-carousel{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            max-width: 400px;
+            margin-top: 20px;
+            margin-left: 50px;
+            padding: 25px;
+
+            .owl-dots{
+                display: flex;
+                margin: 15px 0px;
+                width: 100%;
+                justify-content: center;
+            
+                .owl-dot span {
+                  background:#b6c95a;
+                  border-radius: 20px;
+                  display: block;
+                  height: 12px;
+                  margin: 5px 7px;
+                  opacity: 0.8;
+                  width: 12px;
+                }
+            
+                .owl-dot.active span{
+                  background: #293f86;
+                  height: 15px;
+                  width: 15px;
+                }
+              }
+        }
+    }
+
+    .beneficios{
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        margin-bottom: 60px;
+
+        h1{
+            margin-bottom: 40px;
+        }
+
+        li{
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+
+    .download{
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        margin-bottom: 60px;
+
+        h1{
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        // .bulaButton{
+        //     text-decoration: none;
+        //     background-color: #b6c95a;
+        //     padding: 10px 35px;
+        //     font-size: 20px;
+        //     color: #293f86;
+        //     font-family: 'Quicksand', sans-serif;
+        //     font-weight: bold;
+        //     border-radius: 0 25px 0 25px;
+
+        //     &:hover{
+        //         background-color: #293f86;
+        //         color: white;
+        //     }
+        // }
+    }
+}
+
+
+@media (max-width: 760px)
+{
+    .produto-info{
+        
+
+        .description{
+            flex-direction: column;
+
+            .description-carousel{
+                align-self: center;
+                margin-left: 0px;
+            }
+
+            .description-text{
+                padding: 0px 10%;
+            }
+        }
+
+        .beneficios{
+            padding: 0px 10%;
+        }
+
+        .download{
+            padding: 0px 10%;
+        }
+    }
+    
+}

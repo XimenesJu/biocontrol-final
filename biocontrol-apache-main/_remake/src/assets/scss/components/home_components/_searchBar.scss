@@ -1,0 +1,100 @@
+.searchbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    transition: all 0.5s ease;
+    padding: 0px 10%;
+    // margin-top: 10px;
+    .topnav {
+      display: flex;
+      padding: 0px 10px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-color: #293f86;
+      border-radius: 50px 0 50px 0;
+      width: 100%;
+      height: 60%;
+      .text-topNav {
+        display: flex;
+        color: #b6c95a;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        flex: 1;
+        margin-bottom: 0;
+      }
+
+      .form-searchBar-home{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 3;
+
+        .item-searchBar{
+          flex: 1;
+          max-width: 200px;
+        }
+
+        .input-topNav {
+          border: none;
+          padding: 0px 10px;
+          text-align: left;
+          font-size: 16px;
+          font-family: 'Quicksand', sans-serif;
+          font-style: italic;
+          border-radius: 20px;
+          width: auto;
+          margin: 0px 5px;
+          height: 40px;
+        }
+        .button-topNav {
+          display: flex;
+          padding: 0px 10px;
+          // margin: 0px 5px;
+          border: none;
+          align-self: center;
+          justify-self: center;
+          align-items: center;
+          justify-content: center;
+          color: #293f86;
+          font-size: 14px;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: bold;
+          border-radius: 20px;
+          width: auto;
+          max-width: 244px;
+          height: 40px;
+          cursor: pointer;
+          background-color: #b6c95a;
+        }
+      }
+    }
+  }
+
+
+@media (max-width: 1000px)
+{
+  .searchbar {
+    height: 300px;
+    padding: 0px 0;
+    .topnav {
+      border-radius: 0;
+      width: 100%;
+
+      .form-searchBar-home{
+        flex-wrap: wrap;
+        height: 100%;
+
+        .item{
+          margin: 5px 0px;
+        }
+      }
+    }
+  }
+}

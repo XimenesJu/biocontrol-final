@@ -1,0 +1,79 @@
+.page-headers {
+
+    .pre-header {
+        padding: 40px 0 60px;
+
+        .btn {
+            padding-left: 0;
+
+            i.fas {
+                font-size: 170%;
+                color: $secondary;
+                transform: translateY(5px)
+            }
+
+            &:hover {
+                transform: translateX(-5px);
+
+                i.fas {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    
+    .bg-image {
+        display: none;
+    }
+
+    .header-content {
+        height: 386px;
+        background-position: center;
+        background-size: cover;
+
+        .content-wrapper {
+            position: relative;
+            top: -37px;
+
+            .description {
+                max-width: 620px;
+            }
+        }
+
+    }
+
+    @media screen and ($lg-min) {
+
+        .pre-header {
+            padding: 90px 0 110px;
+
+            .btn {
+                font-size: 1.5rem;
+
+                i.fas {
+                    transform: translateY(7px)
+                }
+            }
+        }
+        
+        .header-content {
+            height: 840px;
+
+            .content-wrapper {
+                top: -50px;
+
+                .site-titles {
+
+                    .title {
+                        font-size: 5.5rem;
+                    }
+
+                    .subtitle {
+                        font-size: 4.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+}

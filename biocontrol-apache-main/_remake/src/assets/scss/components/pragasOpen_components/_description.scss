@@ -1,0 +1,17 @@
+.praga__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    p {
+      text-align: left;
+      font-family: 'Quicksand', sans-serif;
+      color: #293f86;
+      font-size: 18px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }

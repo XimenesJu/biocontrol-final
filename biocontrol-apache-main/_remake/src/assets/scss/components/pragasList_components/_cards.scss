@@ -1,0 +1,96 @@
+.pragas__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    align-items: center;
+    padding: 0px 10%;
+    .pragas__description {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      p {
+        display: flex;
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        color: #293f86;
+        font-size: 18px;
+      }
+    }
+    .pragas__cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      width: 100%;
+      .pragas__card {
+        // width: 100%;
+        max-width: 400px;
+        margin: 15px;
+        img {
+          margin-top: 40px;
+          width: 100%;
+          border-radius: 50px 0 50px 0;
+        }
+        h1 {
+          display: flex;
+          justify-content: left;
+          text-align: left;
+          font-family: 'Quicksand', sans-serif;
+          color: #293f86;
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        p {
+          display: flex;
+          justify-content: left;
+          text-align: left;
+          font-family: 'Quicksand', sans-serif;
+          color: #293f86;
+          font-size: 16px;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          font-family: 'Quicksand', sans-serif;
+          color: #293f86;
+          background-color: #b6c95a;
+          width: 100%;
+          max-width: 150px;
+          padding: 20px 10px;
+          font-weight: bold;
+          height: 30px;
+          font-size: 16px;
+          margin-top: 20px;
+          border-radius: 0 15px 0 15px;
+          transition: all 0.2s ease;
+        }
+        a:hover{
+            background-color: #293f86;
+            color: white;
+        }
+      }
+    }
+  }
+
+@media (max-width: 760px)
+{
+    .pragas__list{
+
+        padding: 0px 0px;
+        .pragas__cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+}

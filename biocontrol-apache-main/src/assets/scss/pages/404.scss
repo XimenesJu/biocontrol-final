@@ -1,0 +1,43 @@
+.page-404 {
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 68%;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bg-image {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        width: 60%;
+
+        .small {
+            font-size: 170%;
+        }
+
+        .big {
+            font-weight: 700;
+            font-size: 600%;
+            line-height: 1;
+            margin-bottom: .2em;
+        }
+
+        .text {
+            font-size: 110%;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    }
+
+    & + .site-footer {
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 2.35rem;
+    }
+}

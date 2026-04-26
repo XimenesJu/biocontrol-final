@@ -1,0 +1,371 @@
+.site-header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background-color: $primary;
+	transition: $transition-base;
+	z-index: 999;
+
+	.logo {
+		display: block;
+		position: absolute;
+		top: 0;
+		transition: $transition-base;
+
+		.logo-biocontrol {
+			width: 90px;
+			height: 50px;
+			display: block;
+			fill: #fff;
+			transition: $transition-base;
+
+			> g {
+				transform: translateY(100px) translateX(-120px);
+
+				.letters {
+					display: none;
+				}
+
+				.symbol {
+					transition: $transition-base;
+					transform-origin: center;
+				}
+			}
+		}
+
+		h1 {
+			font-size: 0.5px;
+			color: transparent;
+			text-indent: -9999px;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.x-button {
+		float: right;
+		position: relative;
+		margin-top: 13px;
+		margin-right: 15px;
+		z-index: 1;
+	}
+
+	.menu-principal {
+
+		.menu {
+			width: 100%;
+			height: 0;
+			list-style-type: none;
+			margin: 90px 0 0;
+			padding: 0 15px;
+			position: absolute;
+			opacity: 0;
+			overflow: hidden;
+			transition: $transition-base;
+
+			li {
+				font-size: 1.125rem;
+				display: block;
+				position: relative;
+				transition: $transition-base;
+
+				a {
+					display: block;
+					color: $light;
+
+					&:hover {
+						opacity: 0.7;
+						text-decoration: none;
+					}
+				}
+
+				ul {
+					max-height: 0;
+					overflow: hidden;
+					transition: $transition-base;
+					transition-duration: 0.6s;
+
+					li {
+						font-size: 85%;
+						opacity: 0.6;
+						margin-bottom: 5px;
+
+						&::after {
+							display: none;
+						}
+
+						&:hover {
+							opacity: 1;
+
+							a {
+								opacity: 1;
+							}
+						}
+					}
+				}
+
+				&::after {
+					content: '';
+					width: 30px;
+					height: 2px;
+					background-color: lighten($primary, 10%);
+					display: block;
+					margin: 10px 0;
+					transition: $transition-base;
+				}
+
+				&.active {
+
+					&::after {
+						background-color: $light;
+					}
+				}
+
+				&:hover {
+
+					ul {
+						max-height: 350px;
+					}
+
+					&::after {
+						width: 60px;
+					}
+				}
+
+				&:last-child {
+
+					&::after {
+						display: none;
+					}
+
+					a {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		.social {
+			list-style: none;
+			margin: 10px 35px 0;
+			font-size: 1.3rem;
+			padding: 0;
+			float: right;
+			transition: $transition-base;
+
+			li {
+				display: inline-block;
+				color: $light;
+
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	&::before {
+		content: '';
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: $transition-base;
+		transition-delay: 0.5s;
+		transition-property: box-shadow;
+	}
+
+	&.active {
+		height: 100vh;
+
+		.menu {
+			height: 100%;
+			opacity: 1;
+		}
+
+		&::before {
+			height: 55px;
+			box-shadow: rgba(darken($primary, 20%), 0.8) 0 2px 25px;
+			transition-delay: 0s;
+		}
+
+		& ~ .content-area {
+			height: 100vh;
+			overflow: hidden;
+		}
+	}
+
+	@media screen and ($lg-min) {
+		width: 120px;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		transition-delay: 0.3s;
+
+		.menu-principal {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			.logo {
+
+				.logo-biocontrol {
+					width: 120px;
+					height: 60px;
+					margin-top: 25px;
+					transition-delay: 0;
+
+					> g {
+						transform: none;
+					}
+				}
+			}
+
+			.menu {
+				width: 0;
+				height: auto;
+				margin-top: 0;
+				transition: none;
+			}
+
+			.social {
+				width: 120px;
+				font-size: 1.875rem;
+				text-align: center;
+				float: none;
+				margin: 0;
+				position: fixed;
+				left: 0;
+				bottom: 15px;
+
+				li {
+					display: block;
+				}
+			}
+
+			.x-button {
+				margin: 0;
+				position: fixed;
+				top: calc(50% - 15px);
+				left: 47px;
+				transform: scale(1.3) scaleY(1.3);
+
+				&.active {
+					transform: scale(1.3);
+				}
+			}
+		}
+
+		&::before {
+			width: 0;
+			height: 100%;
+		}
+
+		&.active {
+			width: 100vw;
+			transition-delay: 0s;
+
+			.menu-principal {
+				max-width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+
+				.logo {
+					right: 105px;
+					top: 35%;
+					transition-delay: 0.3s;
+
+					.logo-biocontrol {
+						width: 235px;
+						height: 120px;
+						transition-delay: 0.3s;
+
+						.letters {
+							display: block;
+						}
+					}
+				}
+
+				.menu {
+					width: 100%;
+					margin-left: 160px;
+					opacity: 1;
+					transition: $transition-base;
+					transition-property: opacity;
+					transition-delay: 0.3s;
+				}
+
+				.social {
+					opacity: 0;
+				}
+			}
+
+			&::before {
+				width: 120px;
+				height: 100%;
+				box-shadow: rgba(darken($primary, 20%), 0.8) 10px 0 45px;
+				// transition-delay: 0.3s;
+			}
+		}
+	}
+
+	@media screen and ($xl-min) {
+
+		&.active {
+
+			.menu-principal {
+
+				.logo {
+					right: 105px;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1490px) {
+
+		&.active {
+
+			.menu-principal {
+
+				.logo {
+					right: 105px;
+
+					.logo-biocontrol {
+						width: 335px;
+						height: 164px;
+					}
+				}
+
+				.menu {
+					margin-left: 0;
+
+					li {
+						font-size: 2.013rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-active {
+	height: 0;
+	overflow: hidden;
+
+	body {
+		overflow-y: scroll;
+	}
+}
+
+.mobile-swipe-area {
+
+	@media screen and ($sm-max) {
+		width: 25px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 999;
+	}
+}

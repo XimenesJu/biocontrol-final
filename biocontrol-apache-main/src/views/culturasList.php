@@ -1,0 +1,85 @@
+<?php require_once'includes/header.php' ?>
+
+<link rel="stylesheet" href="assets/js/vendors/owl.carousel.min.css">
+
+<?php $bgImg= 'assets/images/home-banner-bg-xs.jpg';$title = 'teste';  $text='teste texto'; include'includes/secondary_header.php' ?>
+
+<div class="content-page">
+    <main>
+      <section class="culturas__list">
+        <div class="culturas__description">
+          <p>
+            As soluções da Biocontrol são baseadas em modernas técnicas de
+            pesquisa, que buscam o aperfeiçoamento dos produtos e, também, o
+            desenvolvimento de novas ferramentas de controle biológico,
+            realizando testes agronômicos consecutivos em inúmeras culturas sob
+            diversas condições climáticas. A eficácia dessas soluções geram
+            grandes resultados aos agricultores.
+          </p>
+        </div>
+
+        <div class="culturas__cards">
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+          <div class="culturas__card">
+            <img src="assets/images/cana-de-acucar.jpg" />
+            <h1>Cana-de-açucar</h1>
+            <p>
+              A cana-de-açúcar é a principal matéria-prima para a fabricação do
+              açúcar e álcool, com caules ricos em sacarose.
+            </p>
+            <a href="#">ver pragas</a>
+          </div>
+        </div>
+      </section>
+    </main>
+</div>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+<?php require_once'includes/footer.php' ?>

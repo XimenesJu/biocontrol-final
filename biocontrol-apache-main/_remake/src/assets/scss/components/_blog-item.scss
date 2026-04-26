@@ -1,0 +1,44 @@
+.blog-item {
+
+    margin-bottom: 44px;
+
+        img {
+            margin-bottom: 20px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .category {
+            font-size: 0.78125rem;
+            text-transform: uppercase;
+            color: $gray-base-light;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 1.2225rem;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            font-size: 0.945rem;
+            color: $gray-base-light;
+            margin-bottom: 12px;
+        }
+
+        a.btn-link {
+            font-size: 1.125rem;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            i {
+                transition: $transition-base;
+            }
+
+            &:hover {
+
+                i {
+                    transform: translateX(5px);
+                }
+            }
+        }
+}

@@ -1,0 +1,63 @@
+.pagination {
+
+    ol {
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        letter-spacing: 5px;
+
+        li {
+            display: inline-block;
+            font-size: 1.301875rem;
+
+            a {
+                color: $gray-base;
+                display: inline-block;
+
+                i {
+                    font-size: 1.171875rem;
+                    color: $primary;
+                }
+
+                &:hover {
+                    color: $dark;
+                }
+            }
+
+            &.disabled {
+
+                a {
+                    color: lighten($gray-base, 15%);
+                    cursor: default;
+                }
+            }
+
+            &.active {
+
+                a {
+                    font-weight: 700;
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    @media screen and ($lg-min) {
+
+        ol {
+
+            li {
+                font-size: 1.602rem;
+
+                a {
+
+                    i {
+                        font-size: 1.572rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,115 @@
+// Imagens do logo do projeto
+$logo: '../images/logo.png';
+
+
+// Braking points
+$xs-max: "max-width: 575px";
+$sm-min: "min-width: 576px";
+$sm-max: "max-width: 767px";
+$md-min: "min-width: 768px";
+$md-max: "max-width: 991px";
+$lg-min: "min-width: 992px";
+$lg-max: "max-width: 1199px";
+$xl-min: "min-width: 1200px";
+
+
+// Imagens em geral
+
+
+
+// Seleção de conteúdo
+::selection {
+	background: $primary;
+	color: #fff;
+}
+
+
+
+html,
+body {
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+.content-area {
+	margin-top: 50px;
+}
+
+@media screen and ($lg-min) {
+	
+	body {
+		font-size: 20px;
+	}
+
+	.content-area {
+		margin-top: 0;
+		margin-left: 120px;
+	}
+}
+
+
+.lock-scroll {
+	height: 0;
+	overflow: hidden;
+
+	body {
+		overflow-y: scroll;
+	}
+}
+
+
+// Animate.css
+.animated {
+	animation-duration: 0.5s;
+}
+
+
+// Padding padrão das seções
+.section-padding,
+.section-top {
+	
+	@media screen and ($sm-max) {
+		padding-top: 40px;
+	}
+
+	@media screen and ($md-min) {
+		padding-top: 90px;
+	}
+}
+
+.section-bottom,
+.section-padding {
+	
+	@media screen and ($sm-max) {
+		padding-bottom: 40px;
+	}
+
+	@media screen and ($md-min) {
+		padding-bottom: 90px;
+	}
+}
+
+
+// Parágrafo
+p {
+	line-height: 1.1;
+}
+
+
+// hr
+hr {
+	border: 3px solid $secondary;
+}
+
+
+.secondary-border-radius {
+	border-radius: 40px 0;
+}
+
+.secondary-border-radius-lg {
+	border-radius: 40px 0;
+
+	@media screen and ($md-min) {
+		border-radius: 100px 0;
+	}
+}

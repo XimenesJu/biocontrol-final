@@ -1,0 +1,34 @@
+.page-blog {
+    
+    .featured {
+
+        .read-more {
+            padding-left: 0;
+        }
+    }
+
+    .blog-block-item {
+        margin-bottom: 60px;
+
+        .title {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and ($lg-min) {
+        
+        .featured {
+
+            .site-titles {
+
+                .title {
+                    font-size: 4rem;
+                }
+            }
+
+            .read-more {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

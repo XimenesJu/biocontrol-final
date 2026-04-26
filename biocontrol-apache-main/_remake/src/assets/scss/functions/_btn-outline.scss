@@ -1,0 +1,21 @@
+/**
+ * Outline buttons
+ */
+@mixin button-outline($btn-color, $text-color) {
+	color: $btn-color;
+	border-color: $btn-color;
+	background-color: transparent;
+
+	&:hover {
+		background-color: $btn-color;
+		color: $text-color;
+		box-shadow: 0 2px 0 0 darken($btn-color, 20%);
+	}
+}
+
+@mixin button-hover-outline($btn-color, $bg-color: transparent) {
+	background-color: $bg-color;
+	color: $btn-color;
+	border-color: $btn-color;
+	box-shadow: 0 2px 0 0 darken($bg-color, 20%);
+}

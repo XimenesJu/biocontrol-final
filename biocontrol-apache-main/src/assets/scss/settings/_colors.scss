@@ -1,0 +1,21 @@
+$primary:       #293f86;
+$primary-light: lighten($primary, 15%);
+$primary-dark:  daken($primary, 15%);
+$secondary:     #b6c95a;
+$success:       #6FFC58;
+$info:          #6FC8C9;
+$warning:       #C95247;
+$dark:          #202023;
+$light:         #fff;
+
+// $danger:        $red !default;
+
+$gray-base: #868686;
+$gray-med: #edeef0;
+
+$theme-colors: (
+    "gray-base": $gray-base
+);
+
+$body-bg: #fff;
+$body-color: $primary;

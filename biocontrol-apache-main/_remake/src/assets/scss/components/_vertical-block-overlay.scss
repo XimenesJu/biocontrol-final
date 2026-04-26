@@ -1,0 +1,48 @@
+.vertical-block-overlay {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    @media screen and ($sm-max) {
+
+        .subtitle {
+            margin-bottom: 20px;
+        }
+
+        &.title-single-line {
+
+            .content {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    @media screen and ($md-min) {
+        margin-bottom: 100px;
+
+        .content {
+            margin-top: -50px;
+        }
+
+        .description {
+            max-width: 335px;
+            margin-top: 25px;
+        }
+
+        .image {
+            text-align: right;
+        }
+    }
+}

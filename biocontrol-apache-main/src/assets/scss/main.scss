@@ -1,0 +1,48 @@
+//setup
+@import 'bootstrap';
+@import 'settings/colors';
+@import 'settings/general';
+@import 'settings/utils';
+@import 'settings/bootstrap-vars';
+@import 'settings/fonts';
+
+// Functions and mixins
+// ==============================
+// @import 'functions/headings';
+// @import 'functions/btn-outline';
+// @import 'functions/font-face';
+// @import 'functions/margins-paddings';
+
+//components
+@import 'components/footer';
+@import 'components/main_header';
+@import 'components/secondary_header';
+@import 'components/content';
+@import 'components/faq.scss';
+@import 'components/fale-conosco.scss';
+
+
+//global-components
+@import 'components/global/buttons-links';
+
+//page-home-components
+@import 'components/home_components/CulturasCarousel.scss';
+@import 'components/home_components/infoHome.scss';
+@import 'components/home_components/searchBar.scss';
+
+//page-pragasList-components
+@import 'components/pragasList_components/cards.scss';
+
+//page-pragasOpen-components
+@import 'components/pragasOpen_components/description.scss';
+@import 'components/pragasOpen_components/cicloDaPraga.scss';
+@import 'components/pragasOpen_components/levantamentos.scss';
+
+//page-CulturasList-components
+@import 'components/culturasList_components/culturas-card.scss';
+
+//page-culturasOpen-components
+@import 'components/culturasOpen_components/culturas-description.scss';
+
+//page-solucoes
+@import 'components/solucoes_components/solucoes_description.scss';

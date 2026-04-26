@@ -1,0 +1,112 @@
+.owl-common {
+
+    .owl-item {
+
+        img {
+            width: auto;
+        }
+    }
+
+    .owl-nav {
+        position: relative;
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+
+            span {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            &.disabled {
+                color: lighten($gray-base, 30%);
+            }
+        }
+
+        .owl-prev {
+            left: 10%;
+        }
+
+        .owl-next {
+            right: 10%;
+        }
+    }
+    
+    .owl-dots {
+        text-align: center;
+        margin-top: 15px;
+
+        .owl-dot {
+            width: 15px;
+            height: 15px;
+            background-color: lighten($gray-base, 30%);
+            border-radius: 100px;
+            display: inline-block;
+            margin: 0 5px;
+
+            &.active {
+                background-color: $primary;
+            }
+        }
+    }
+
+    &.centered-nav {
+        position: relative;
+
+        .owl-nav {
+            position: static;
+
+            .owl-prev,
+            .owl-next {
+                top: 32%;
+            }
+
+            .owl-prev {
+                left: -20px;
+            }
+
+            .owl-next {
+                right: -20px;
+            }
+        }
+
+        @media screen and ($sm-max) {
+            max-width: 95%;
+            margin-left: 2.5%;
+            padding-left: 2.5%;
+        }
+
+        @media screen and ($md-min) {
+
+            .owl-nav {
+                position: static;
+    
+                .owl-prev,
+                .owl-next {
+
+                    span {
+                        font-size: 4rem;
+                    }
+                }
+            }
+
+            &.spaced {
+                max-width: 90%;
+                margin-left: 5%;
+                padding-right: 5%;
+
+                .owl-nav {
+
+                    .owl-prev {
+                        left: -5%;
+                    }
+
+                    .owl-next {
+                        right: -5%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.bordered-list {
+    list-style-type: none;
+    border-left: 3px solid $secondary;
+    padding-left: 20px;
+
+    li {
+        margin-bottom: 25px;
+    }
+
+    @media screen and ($md-min) {
+        padding-left: 32px;
+    }
+}

@@ -1,0 +1,122 @@
+a,
+a i,
+a img,
+.btn,
+button,
+input,
+textarea {
+	outline: none;
+	transition: $transition-base;
+
+	&:focus {
+		outline: none !important;
+	}
+}
+
+a:hover img {
+	opacity: 0.8;
+}
+
+
+.btn {
+
+	i[class*="fa-angle"] {
+		font-size: 120%;
+		vertical-align: middle;
+	}
+
+	&:focus {
+		box-shadow: none !important;
+	}
+}
+
+
+.btn-secondary {
+	color: $primary;
+
+	&:hover {
+		background-color: $primary;
+		border-color: $primary;
+		color: $light;
+	}
+}
+
+
+.btn-tab-header {
+	border-bottom-width: 0px;
+	border-radius: 20px 0 0;
+	padding: 0.7rem 1.8rem;
+	margin-right: 5px;
+	opacity: 0.5;
+
+	&.active {
+		border-color: $secondary !important;
+		background-color: transparent !important;
+		color: $primary !important;
+		opacity: 1;
+	}
+}
+
+
+// Menu mobile toggle
+.x-button {
+
+	$bar-height: 1px;
+	$bar-spacing: 7px;
+
+	height: 22px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	span {
+		width: 26px;
+		height: $bar-height;
+		position: relative;
+		display: block;
+		background-color: $light;
+		border: none;
+		border-radius: 2px;
+		transition: $transition-base;
+		transition-delay: 0.2s;
+
+		&::before,
+		&::after {
+			content: '';
+			width: 100%;
+			height: $bar-height;
+			background-color: $light;
+			border-radius: inherit;
+			position: absolute;
+			left: 0;
+			transition: $transition-base;
+		}
+
+		&::before {
+			top: $bar-spacing;
+		}
+
+		&::after {
+			bottom: $bar-spacing;
+		}
+	}
+
+	&.active {
+
+		span {
+			background-color: transparent;
+			transition-delay: 0.2s;
+			
+			&::before {
+				transform: rotateZ(45deg);
+				top: 0;
+			}
+
+			&::after {
+				transform: rotateZ(-45deg);
+				bottom: 0;
+			}
+		}
+	}
+}

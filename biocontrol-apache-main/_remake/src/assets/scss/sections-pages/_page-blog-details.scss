@@ -1,0 +1,132 @@
+.page-blog-details {
+
+    .custom-breadcrumb {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .post-wrapper {
+
+        .site-titles {
+            margin-bottom: 30px;
+        }
+
+        .post-body {
+            line-height-step: 1.3;
+
+            p {
+                line-height: inherit;
+            }
+
+            img,
+            iframe,
+            embed {
+                max-width: 100%;
+            }
+
+            a {
+                color: $secondary;
+
+                &:hover {
+                    color: $gray-base;
+                }
+            }
+        }
+
+        .post-share {
+            margin-top: 50px;
+            font-weight: 700;
+
+            .addthis_inline_share_toolbox {
+                transform: scale(0.9);
+                transform-origin: left;
+
+                svg {
+
+                    fill: $primary !important;
+                }
+            }
+        }
+    }
+
+    .another-posts {
+        
+        .site-titles {
+            margin-bottom: 40px;
+        }
+
+        .collapsed-categories {
+            margin-bottom: 50px;
+        }
+
+        .owl-blog-posts {
+            position: relative;
+            margin-top: 30px;
+
+            .owl-navigation {
+                position: absolute;
+                top: -50px;
+                right: 0;
+
+                .prev,
+                .next {
+                    font-size: 2.275rem;
+                    margin-left: 10px;
+
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and ($lg-min) {
+
+        .page-headers {
+
+            .pre-header {
+                padding-bottom: 70px;
+            }
+        }
+
+        .post-wrapper,
+        .another-posts {
+            padding-left: 130px;
+        }
+
+        .post-wrapper {
+
+            .site-titles {
+                margin-bottom: 60px;
+
+                .title {
+                    font-size: 4rem;
+                }
+            }
+
+            .post-share {
+
+                .addthis_inline_share_toolbox {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .another-posts {
+            
+            .site-titles {
+                margin-bottom: 60px;
+            }
+
+            .owl-blog-posts {
+                margin-top: 0;
+
+                .owl-navigation {
+                    top: -60px;
+                }
+            }
+        }
+    }
+}
